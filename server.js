@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 3000
 const server = http.createServer((req, res) => {
   if (req.url === '/') return respondHello(req, res)
   if (req.url === '/user-agent') return respondHello(req, res)
+  if (req.url === '/base64') return respondHello(req, res)
 
   res.end()
 })
